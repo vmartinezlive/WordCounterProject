@@ -19,5 +19,18 @@ namespace WordCounter.Tests
         //Assert
         Assert.IsInstanceOfType(indexView, typeof(ViewResult));
       }
+
+      [TestMethod]
+     public void Index_HasCorrectModelType_WordAndSentenceList()
+     {
+       //Arrange
+       ViewResult indexView = new HomeController().Index() as ViewResult;
+
+       //Act
+       var result = indexView.ViewData.Model;
+
+       //Assert
+       Assert.IsInstanceOfType(result, typeof(List<Word>));
+     }
     }
 }

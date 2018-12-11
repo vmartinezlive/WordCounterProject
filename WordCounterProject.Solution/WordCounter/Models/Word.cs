@@ -1,3 +1,8 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.AspNetCore.Mvc;
+using WordCounter.Models;
+using System;
+
 namespace WordCounter.Models
 {
   public class Word
