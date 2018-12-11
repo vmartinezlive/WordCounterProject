@@ -20,6 +20,8 @@ namespace WordCounter.Tests
       Assert.IsInstanceOfType(indexView, typeof(ViewResult));
     }
 
+    
+
     [TestMethod]
     public void Result_ReturnsCorrectView_True()
     {

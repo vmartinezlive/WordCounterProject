@@ -14,7 +14,7 @@ namespace WordCounter.Controllers
     }
 
     [HttpGet("/word/new")]
-    public ActionResult CreateForm()
+    public ActionResult New()
     {
       return View();
     }
@@ -26,6 +26,13 @@ namespace WordCounter.Controllers
       return RedirectToAction("Index");
     }
 
+    [HttpPost("/word/delete")]
+    public ActionResult Destroy()
+    {
+      Words.ClearAll();
+      return View("Index");
+      // return new EmptyResult(); Fail CorrectView test
+    }
 
   }
 }
