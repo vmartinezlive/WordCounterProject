@@ -5,7 +5,7 @@ using System;
 
 namespace WordCounter.Controllers
 {
-  public class WordsController : Controller
+  public class WordController : Controller
   {
     [HttpGet("/word")]
     public ActionResult Index()
@@ -29,7 +29,7 @@ namespace WordCounter.Controllers
     [HttpPost("/word/delete")]
     public ActionResult Destroy()
     {
-      Words.ClearAll();
+      Word.ClearAll();
       return View("Index");
       // return new EmptyResult(); Fail CorrectView test
     }
