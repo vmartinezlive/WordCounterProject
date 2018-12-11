@@ -28,8 +28,8 @@ namespace WordCounter.Tests
 
       //Act
       string inputWord = "Apple";
-      string inputStringToCheck = "there is a bLack caT and a white CAt in the cathedral!!";
-      ActionResult resultView = controller.Result(inputLetterOrWord, inputStringToCheck);
+      string inputSentence = "I took apple from the appletree";
+      ActionResult resultView = controller.Result(inputWord, inputSentence);
 
       //Assert
       Assert.IsInstanceOfType(resultView, typeof(ViewResult));

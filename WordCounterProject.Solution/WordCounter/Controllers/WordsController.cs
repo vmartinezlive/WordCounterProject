@@ -1,7 +1,7 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.AspNetCore.Mvc;
 using WordCounter.Models;
 using System.Collections.Generic;
+using System;
 
 namespace WordCounter.Controllers
 {
@@ -20,9 +20,9 @@ namespace WordCounter.Controllers
     }
 
     [HttpPost("/word")]
-    public ActionResult Create()
+    public ActionResult Create(string inputWord, string inputSentence)
     {
-      Word myWord = new Word();
+      Word myWord = new Word(inputWord, inputSentence);
       return RedirectToAction("Index");
     }
 

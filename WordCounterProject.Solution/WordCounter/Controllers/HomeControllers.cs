@@ -1,4 +1,3 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using WordCounter.Controllers;
@@ -13,7 +12,7 @@ namespace WordCounter.Controllers
     {
       // Word newWord = new Word();
       // return View(newWord);
-      return new EmptyResult();
+      return View();
     }
 
   }
