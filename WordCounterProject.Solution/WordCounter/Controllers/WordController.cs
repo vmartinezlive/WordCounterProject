@@ -5,7 +5,7 @@ using System;
 
 namespace WordCounter.Controllers
 {
-  public class WordsController : Controller
+  public class WordController : Controller
   {
     [HttpGet("/word")]
     public ActionResult Index()

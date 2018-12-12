@@ -12,6 +12,9 @@ Build out an MVC web user interface for the Word Counter application you built i
 
 ## Setup/Installation Requirements
 
+* clone repository https://github.com/vmartinezlive/WordCounterProject.git
+* open browser 
+
 ```
 WordCounter.Solution
 ├── README.md
@@ -33,7 +36,7 @@ WordCounter.Solution
 
 ```
 ## Objectives
-
+### Word Counter C# Basic and Testing
 * Create specs in plain english with on README
 * Specs include specific input and output values and a descriptive sentence.
 * Specs begin with the simplest possible behavior and progress to more complex cases, covering different input values.
@@ -56,6 +59,12 @@ WordCounter.Solution
   Input:  Fire! Fire! Where's the Fire?
   Output: 3
 
+### Word Counter Basic MVC Web Apps
+* The WordCounter class works as expected.
+* A splash page is used.
+* Project uses two or more controllers.
+* GET and POST requests/responses are used successfully.
+* Code and documentation follow best practices (descriptive variables names, proper indentation and spacing, separation between user-interface and business logic, detailed commit messages in the correct tense, and a well-formatted README with installations instructions).
 
 
 ## Known Bugs

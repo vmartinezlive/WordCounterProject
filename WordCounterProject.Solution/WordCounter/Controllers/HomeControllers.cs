@@ -14,6 +14,7 @@ namespace WordCounter.Controllers
       // return View(newWord);
       return View();
     }
+    
 
   }
 }
