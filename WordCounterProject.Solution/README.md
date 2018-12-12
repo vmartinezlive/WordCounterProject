@@ -13,7 +13,9 @@ Build out an MVC web user interface for the Word Counter application you built i
 ## Setup/Installation Requirements
 
 * clone repository https://github.com/vmartinezlive/WordCounterProject.git
-* open browser 
+* open file on terminal
+* open browser and run http://localhost 5000
+
 
 ```
 WordCounter.Solution
