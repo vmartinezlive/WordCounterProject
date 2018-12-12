@@ -16,7 +16,6 @@ Build out an MVC web user interface for the Word Counter application you built i
 * open file on terminal
 * open browser and run http://localhost 5000
 
-
 ```
 WordCounter.Solution
 ├── README.md
@@ -27,11 +26,16 @@ WordCounter.Solution
     ├── Startup.cs
     ├── Controllers
     │   └── HomeController.cs
+    │   └── WordController.cs
     ├── Models
+    │   └── Index.cshtml
+    └── Words
+    |   └── DeleteAll.cshtml
+    |   └── New.cshtml   
+    |   └── Result.cshtml       
     └── Views
-        └── Home
-            └── Index.cshtml
-
+    |   └── Home
+    |       └── Index.cshtml
 └── WordCounter.Tests
     └── WordCounter.Tests.csproj
     └── ModelTests
@@ -62,11 +66,10 @@ WordCounter.Solution
   Output: 3
 
 ### Word Counter Basic MVC Web Apps
-* The WordCounter class works as expected.
-* A splash page is used.
-* Project uses two or more controllers.
-* GET and POST requests/responses are used successfully.
-* Code and documentation follow best practices (descriptive variables names, proper indentation and spacing, separation between user-interface and business logic, detailed commit messages in the correct tense, and a well-formatted README with installations instructions).
+* The user should see a splash page when first visiting the site.
+* The user should be able to navigate to the 'Word Counter' game from the splash page.
+* The user should be able to fill out a form to play the 'Word Counter' game.
+* The user should be able to submit this form and see how many times their provided word appears in the passage they've also provided.
 
 
 ## Known Bugs
