@@ -7,7 +7,7 @@ using WordCounter.Models;
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class HomeControllerTest
+  public class WordsControllerTest
   {
     [TestMethod]
     public void Index_ReturnsCorrectView_True()
@@ -19,7 +19,7 @@ namespace WordCounter.Tests
       //Assert
       Assert.IsInstanceOfType(indexView, typeof(ViewResult));
     }
-    
+
 
     [TestMethod]
     public void Result_ReturnsCorrectView_True()
@@ -30,7 +30,7 @@ namespace WordCounter.Tests
       //Act
       string inputWord = "Apple";
       string inputSentence = "I took apple from the appletree";
-      ActionResult resultView = controller.Result(inputWord, inputSentence);
+      ActionResult resultView = controller.Create(inputWord, inputSentence);
 
       //Assert
       Assert.IsInstanceOfType(resultView, typeof(ViewResult));
