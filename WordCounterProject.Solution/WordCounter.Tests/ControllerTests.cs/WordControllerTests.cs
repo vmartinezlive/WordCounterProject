@@ -7,7 +7,7 @@ using WordCounter.Models;
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class WordsControllerTest
+  public class WordControllerTest
   {
     [TestMethod]
     public void Index_ReturnsCorrectView_True()
@@ -25,7 +25,7 @@ namespace WordCounter.Tests
     public void Result_ReturnsCorrectView_True()
     {
       //Arrange
-      WordsController controller = new WordsController();
+      WordController controller = new WordController();
 
       //Act
       string inputWord = "Apple";
