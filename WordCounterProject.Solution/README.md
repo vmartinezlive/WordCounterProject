@@ -82,7 +82,7 @@ For any issues or have questions, ideas or concerns.  Contact me at vmartinez72@
 
 ## Technologies Used
 
-* HTML, CSS, Json, C#.
+* HTML, CSS, C#.
 
 
 ### License

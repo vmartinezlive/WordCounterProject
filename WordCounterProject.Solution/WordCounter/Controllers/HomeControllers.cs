@@ -1,20 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using WordCounter.Controllers;
-using WordCounter.Models;
 
 namespace WordCounter.Controllers
 {
-  public class HomeController : Controller
-  {
-    [Route("/")]
-    public ActionResult Index()
+    public class HomeController : Controller
     {
-      // Word newWord = new Word();
-      // return View(newWord);
-      return View();
-    }
-    
 
-  }
+      [HttpGet("/")]
+      public ActionResult Index()
+      {
+        return View();
+      }
+
+    }
 }
